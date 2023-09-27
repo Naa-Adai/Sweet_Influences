@@ -1,0 +1,184 @@
+/*
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Mildred Kumah, UMass Lowell Computer Science, mildred_kumah@student.uml.edu
+Copyright (c) 2023 by Mildred All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', cursive;
+}
+
+
+/*Defining the background image*/
+.first {
+    min-height: 400vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #87CEEB, #00BFFF);
+    background-position: center;
+    background-size: 200px;
+}
+
+/*Defining the logo*/
+nav img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Defining the heading */
+.first h2 {
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 2% 35%;
+    text-align: center;
+}
+
+/*Defining the link*/
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3% 12%;
+}
+
+.nav-links ul li a{
+    color: black;
+    font-weight: bold;
+    text-decoration:none;
+    font-size: 20px;
+}
+
+/*Defining the hover line under the link*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+	margin: 0 auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*Defining the body paragraph text*/
+.favorite {
+    width: 80%;
+    color: black;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.validation {
+    text-align: center; /* Center the validation content horizontally */
+    position: fixed; /* Position the validation content */
+    bottom: 0; /* Place it at the bottom of the viewport */
+    width: 100%; /* Set its width to 100% to span the entire viewport */
+    background-color: deepskyblue; /* Add a background color to make it visible */
+    padding: 10px;
+}
+
+
+/*defining the table*/
+.fav-table {
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table horizontally */
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+    background-image: linear-gradient(white, blue); 
+    color: black;
+}
+
+.fav-table thead tr {
+    background-color: black;
+    color: #ffffff;
+    text-align: left;
+}
+
+.fav-table th,
+.fav-table td {
+    padding: 12px 15px;
+    font-weight: bold;
+}
+
+.fav-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+.fav-table tbody tr:nth-of-type(even) {
+    background-color: transparent;
+}
+
+.fav-table tbody tr:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+/*Defining the links in the table*/
+.fav-table tbody tr td div{
+    list-style: none;
+    display: inline-block;
+    padding: 3% 12%;
+}
+
+.fav-table tbody tr td a div{
+    color: deeppink;
+    text-decoration:none;
+}
+
+.fav-table tbody tr td div::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: black;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.fav-table tbody tr td div:hover::after{
+    width: 100%;
+}
+
+/*Defining the last link on the page*/
+.favorite ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3% 12%;
+}
+
+.favorite ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.favorite ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.favorite ul li:hover::after{
+    width: 100%;
+}
+
